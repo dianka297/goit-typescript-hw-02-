@@ -2,7 +2,7 @@ import css from "./App.module.css";
 import { useEffect, useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";
-import { fetchPhotos } from "../photos-api";
+import { fetchPhotos } from "../../photos-api";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
 import EmptyResult from "../EmptyResult/EmptyResult";
