@@ -1,19 +1,18 @@
-import { Circles} from 'react-loader-spinner';
-import { FC } from 'react';
+import { Oval} from 'react-loader-spinner';
 import css from './Loader.module.css';
 
-const Loader: FC = () => {
+const Loader:  React.FC = () => {
   return (
-    <Circles
-      visible={true}
-      height="20"
-      width="20"
-      color="#4fa94d"
-      innerCircleColor="rgb(55, 14, 93)"
-      middleCircleColor="red"
-      ariaLabel="three-circles-loading"
-      wrapperClass={css.loader}
+    <div className={css.container}>
+    <Oval
+    height={80}
+    width={80}
+    color="rgb(88, 125, 228)"
+    ariaLabel="oval-loading"
+    wrapperStyle={{}}
+    visible={true}
     />
+    </div> 
   );
 };
 
